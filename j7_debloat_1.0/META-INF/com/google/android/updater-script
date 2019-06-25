@@ -53,7 +53,9 @@ run_program("/sbin/rm", "-rf", "system/priv-app/Word_SamsungStub");
 ui_print("Removing Game bloatware");
 run_program("/sbin/rm", "-rf", "system/priv-app/Excel_SamsungStub");
 
-
+ui_print("Removing talkback");
+run_program("/sbin/rm", "-rf", "system/app/STalkback");
+run_program("/sbin/rm", "-rf", "system/app/talkback");
 
 
 ui_print("Done!");
