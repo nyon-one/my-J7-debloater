@@ -57,6 +57,8 @@ ui_print("Removing talkback");
 run_program("/sbin/rm", "-rf", "system/app/STalkback");
 run_program("/sbin/rm", "-rf", "system/app/talkback");
 
+ui_print("Removing Youtube");
+run_program("/sbin/rm", "-rf", "/system/app/YouTube.apk");
 
 ui_print("Done!");
 ui_print(" ");
