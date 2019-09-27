@@ -50,15 +50,36 @@ run_program("/sbin/rm", "-rf", "system/priv-app/Excel_SamsungStub");
 run_program("/sbin/rm", "-rf", "system/priv-app/PowerPoint_SamsungStub");
 run_program("/sbin/rm", "-rf", "system/priv-app/Word_SamsungStub");
 
-ui_print("Removing Game bloatware");
-run_program("/sbin/rm", "-rf", "system/priv-app/Excel_SamsungStub");
-
 ui_print("Removing talkback");
 run_program("/sbin/rm", "-rf", "system/app/STalkback");
 run_program("/sbin/rm", "-rf", "system/app/talkback");
 
 ui_print("Removing Youtube");
-run_program("/sbin/rm", "-rf", "/system/app/YouTube.apk");
+run_program("/sbin/rm", "-rf", "/system/app/YouTube");
+
+ui_print("Removing Hangouts");
+run_program("/sbin/rm", "-rf", "/system/app/Hangouts");
+
+ui_print("Removing Default Email app");
+run_program("/sbin/rm", "-rf", "/system/app/Email.apk");
+run_program("/sbin/rm", "-rf", "/system/app/Email.odex");
+run_program("/sbin/rm", "-rf", "/system/app/EmailWidget.apk");
+run_program("/sbin/rm", "-rf", "/system/app/EmailWidget.odex");
+
+ui_print("Removing Skype app");
+run_program("/sbin/rm", "-rf", "/system/app/MSSkype_stub");
+
+ui_print("Removing SamsungPay");
+run_program("/sbin/rm", "-rf", "/system/priv-app/SamsungPayStubMini");
+ui_print("Removing OneDrive");
+run_program("/sbin/rm", "-rf", "/system/priv-app/OneDrive_Samsung_v3");
+run_program("/sbin/rm", "-rf", "/system/priv-app/ANTRadioService");
+run_program("/sbin/rm", "-rf", "/system/priv-app/AirtelStub");
+run_program("/sbin/rm", "-rf", "/system/priv-app/GameTools");
+run_program("/sbin/rm", "-rf", "/system/priv-app/SecEmail_O");
+
+
+run_program("/sbin/rm", "-rf", "/system/app/RoseEUKor");
 
 ui_print("Done!");
 ui_print(" ");
